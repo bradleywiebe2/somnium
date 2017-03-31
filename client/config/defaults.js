@@ -7,7 +7,7 @@ import { Session } from "meteor/session";
  */
 
 // override/set layout
-export const DEFAULT_LAYOUT = "coreLayout";
+export const DEFAULT_LAYOUT = "coreLayoutSomnium";
 
 // override/set workflow
 export const DEFAULT_WORKFLOW = "coreWorkflow";
@@ -15,7 +15,7 @@ export const DEFAULT_WORKFLOW = "coreWorkflow";
 // Use this to override just the home Package
 // ie: {template: "products"}
 export const INDEX_OPTIONS = {
-  workflow: "coreProductGridWorkflow"
+  template: "home"
 };
 
 // default load qty for product grid

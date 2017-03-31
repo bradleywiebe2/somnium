@@ -1,0 +1,10 @@
+
+.circle,
+.circle_min,
+#toTop { behavior:url(js/PIE.htc); }
+
+#form .invalid .error-message, 
+#form .empty .empty-message { display: block; }
+
+#form .error-message, 
+#form .empty-message { display: none; }

@@ -6,14 +6,14 @@
       <img class="circular-icon" src="{{getGravatar currentUser 40}}" alt="avatar" />
       <span id="logged-in-display-name"> {{displayName}}<b class="caret"></b></span>
     </div>
-    <div class="dropdown-menu" role="menu">
+    <div class="dropdown-menu pull-left" role="menu">
       {{> userDropdown}}
     </div>
     {{else}}
     <div class="accounts-dropdown" data-event-category="accounts" data-event-action="accounts-dropdown-click">
       <div class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
         <span data-i18n="accountsUI.signIn">Sign In</span><b class="caret"></b></div>
-      <div class="accounts-dialog accounts-layout dropdown-menu pull-right">
+      <div class="accounts-dialog accounts-layout dropdown-menu pull-left">
         {{> loginForm}}
       </div>
     </div>
@@ -35,34 +35,31 @@
   <ul class="user-accounts-dropdown-apps">
     {{> userAccountsDropdown}}
     <!--administrative shortcut icons -->
-    {{#each reactionApps reactionAppsOptions}}
-      <li class="dropdown-apps-icon">
-        <a href={{pathFor name}} id="dropdown-apps-{{name}}" title="{{label}}">
-          <i class="{{icon}}"></i>
-          <span class="icon-text">
-            {{i18n i18nKeyLabel label}}
-          </span>
-        </a>
-      </li>
-    {{/each}}
+    {{#each reactionApps provides='shortcut' enabled=true}} {{#if hasPermission route}}
+    <li class="dropdown-apps-icon">
+      <a id="{{route}}" title="{{label}}">
+        <i class="{{icon}}"></i>
+        <span class="icon-text">
+          {{label}}
+        </span>
+      </a>
+    </li>
+    {{/if}} {{/each}}
   </ul>
 </template>
 
 <template name="userAccountsDropdown">
   <!--user account shortcut icons -->
-  {{#each reactionApps provides="userAccountDropdown" enabled=true}}
-    <li class="dropdown-apps-icon">
-      <a id="user-dropdown-apps-{{name}}" title="{{label}}">
-        <i class="{{icon}}"></i>
-        <span class="icon-text">
-          {{i18n i18nKeyLabel label}}
-        </span>
-      </a>
-    </li>
-  {{else}}
+  {{#each reactionApps provides='userAccountDropdown' enabled=true}} {{#if hasPermission route}}
   <li class="dropdown-apps-icon">
-    <i class="fa fa-user-secret"></i>
-    <span class="icon-text" data-i18n="accountsUI.signedIn">You are signed in.</span>
+    <a id="{{route}}" title="{{label}}">
+      <i class="{{icon}}"></i>
+      <span class="icon-text">
+        {{label}}
+      </span>
+    </a>
   </li>
+  {{/if}} {{else}}
+  <span data-i18n="accountsUI.signedIn">You are signed in.</span>
   {{/each}}
 </template>

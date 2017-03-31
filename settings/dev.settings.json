@@ -1,10 +1,11 @@
 {
+  "MONGO_URL": "mongodb://heroku_37fxk1w2:6sis0nbksfl786fpv3osko1hku@ds055535.mongolab.com:55535/heroku_37fxk1w2",
   "ROOT_URL": "",
   "MAIL_URL": "",
   "reaction": {
-    "REACTION_USER": "",
-    "REACTION_AUTH": "",
-    "REACTION_EMAIL": ""
+    "REACTION_USER": "admin",
+    "REACTION_AUTH": "1positive!",
+    "REACTION_EMAIL": "susanne@somniumbeds.com"
   },
   "REACTION_LOG_LEVEL": "info",
   "public": {}

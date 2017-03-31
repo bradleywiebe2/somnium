@@ -1,0 +1,32 @@
+<template name="coreLayoutSomnium">
+{{#if hasDashboardAccess}}
+  {{> coreAdminLayout}}
+{{else}}
+    <nav class="reaction-navigation-header somnium-master-client-temp-lay-core">
+      <!-- begin layoutHeader -->
+      {{> Template.dynamic template=layoutHeader}}
+      <!-- {{> somniumHeader}} -->
+      <!-- end layoutHeader -->
+    </nav>
+
+    <nav class="reaction-cart-drawer">
+      {{>cartDrawer}}
+    </nav>
+
+  <main role="main" id="main">
+    <span id="layout-alerts">{{> inlineAlerts}}</span>
+    <!-- {{#if hasPermission 'guest'}} -->
+      <!-- begin template region -->
+      {{> Template.dynamic template=template}}
+      <!-- {{> home}} -->
+      <!-- end template region -->
+    <!-- {{/if}} -->
+
+    <footer class="reaction-navigation-footer footer-default">
+      {{> Template.dynamic template=layoutFooter}}
+      <!-- {{> somniumFooter}} -->
+    </footer>
+  </main>
+
+{{/if}}
+</template>
