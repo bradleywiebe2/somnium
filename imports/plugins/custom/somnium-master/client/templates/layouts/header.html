@@ -10,7 +10,7 @@
             <img src="/resources/spring_header50x50_3.png" />
           </a>
         </div>
-        <!-- <div class="navbar-accounts navbar-somnium-item">{{> accounts tpl="loginDropdown"}}</div> -->
+        <div class="navbar-accounts navbar-somnium-item">{{> accounts tpl="loginDropdown"}}</div>
 
       </div>
       <div class="mobilemenu">
@@ -33,7 +33,7 @@
         <div class="navbar-languages hidden-xs">{{> i18nChooser}}</div>
 -->
         <!-- <div class="navbar-languages navbar-somnium-item"><a href="./../reaction/tag/shop" style="font:'Lato',sans-serif !important;">Shop</a></div> -->
-        <div class="navbar-languages navbar-somnium-item"><a href="./../shop" style="font:'Lato',sans-serif !important;">Shop</a></div>
+        <div class="navbar-languages navbar-somnium-item"><a href="./../reaction/tag/shop" style="font:'Lato',sans-serif !important;">Shop</a></div>
         <div class="navbar-languages navbar-somnium-item"><a href="./../retailers" style="font:'Lato',sans-serif !important;">Retailers</a></div>
         <div class="navbar-languages navbar-somnium-item"><a href="./../faqs" style="font:'Lato',sans-serif !important;">Faqs</a></div>
         <div class="navbar-languages navbar-somnium-item">
@@ -93,9 +93,9 @@
 <script>
   $("a.somnium-brand-dropdown").click(function() {
       if ($('.navbar-accounts').css('left') === '0px')
-          $('.navbar-accounts').css({ 'top': '-64px', 'opacity': '1', 'left': '45px' });
+          $('.navbar-accounts').css({ 'top': '-68px', 'display': 'block', 'opacity': '1', 'left': '45px' });
       else
-          $('.navbar-accounts').css({ 'top': '-64px', 'opacity': '0', 'left': '0px' });
+          $('.navbar-accounts').css({ 'top': '-68px', 'display': 'none', 'opacity': '0', 'left': '0px' });
   });
 </script>
 

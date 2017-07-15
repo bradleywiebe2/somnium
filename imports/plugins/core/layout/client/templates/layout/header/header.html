@@ -1,4 +1,4 @@
-<template name="layoutHeader">
+<!-- <template name="layoutHeader">
 <div class="container-fluid">
   <div class="nav" role="navigation">
 
@@ -11,4 +11,107 @@
     </div>
   </div>
 </div>
+</template> -->
+
+<template name="layoutHeader">
+<div class="container-fluid" style="z-index:999;border-bottom: solid 0px #ffffff;">
+
+  <div class="nav" role="navigation">
+    <div class="container navbar-shop">
+      <!-- <div class="navbar-brand">{{> headerBrand}}</div> -->
+      <div class="navbar-brand grid_2">
+        <div class="somnium-brand-container">
+          <a class="somnium-brand-dropdown" href="/">
+            <img src="/resources/spring_header50x50_3.png" />
+          </a>
+        </div>
+        <div class="navbar-accounts navbar-somnium-item">{{> accounts tpl="loginDropdown"}}</div>
+
+      </div>
+      <div class="mobilemenu">
+
+        <nav class="navbar navbar-light bg-faded somnium-button">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+          </button>
+        </nav>
+
+
+
+      </div>
+
+      <nav class="grid_10">
+        <div class="navbar-cart">{{> cartIcon}}</div>
+        <div class="cart-alert">{{> cartPanel}}</div>
+<!--
+        <div class="navbar-accounts navbar-somnium-item">{{> accounts tpl="loginDropdown"}}</div>
+        <div class="navbar-languages hidden-xs">{{> i18nChooser}}</div>
+-->
+        <!-- <div class="navbar-languages navbar-somnium-item"><a href="./../reaction/tag/shop" style="font:'Lato',sans-serif !important;">Shop</a></div> -->
+        <div class="navbar-languages navbar-somnium-item"><a href="/reaction/tag/shop" style="font:'Lato',sans-serif !important;">Shop</a></div>
+        <div class="navbar-languages navbar-somnium-item"><a href="./../retailers" style="font:'Lato',sans-serif !important;">Retailers</a></div>
+        <div class="navbar-languages navbar-somnium-item"><a href="./../faqs" style="font:'Lato',sans-serif !important;">Faqs</a></div>
+        <div class="navbar-languages navbar-somnium-item">
+          <a href="./../yoursomnium" class="dropdown" style="font:'Lato',sans-serif !important;">Your Somnium</a>
+          <!-- <span><i class="fa fa-chevron-down"></i></span>
+          <ul class="your-somnium">
+            <li><a href="./../athletes">Athletes</a></li>
+            <li><a href="./../designers">Designers</a></li>
+            <li><a href="./../retailers">Retailers</a></li>
+          </ul> -->
+        </div>
+        <div class="navbar-languages navbar-somnium-item"><a href="./../benefits" style="font:'Lato',sans-serif !important;">The Benefits</a></div>
+        <div class="navbar-languages navbar-somnium-item">
+          <a href="./../ourmattress" class="dropdown" style="font:'Lato',sans-serif !important;">Our Mattresses</a>
+          <span style="position:absolute;top:45px;left:0px;width:100%;text-align:center;color:#777;font-size:10px;z-index:-1;"><i class="fa fa-chevron-down"></i></span>
+          <ul>
+            <li><a href="./../somnium1" style="font:'Lato',sans-serif !important;">Somnium 1</a></li>
+            <li><a href="./../somnium2" style="font:'Lato',sans-serif !important;">Somnium 2</a></li>
+            <li><a href="./../somniumbaby" style="font:'Lato',sans-serif !important;">Somnium Baby</a></li>
+            <li><a href="./../mattresscare" style="font:'Lato',sans-serif !important;">Mattress Care</a></li>
+          </ul>
+        </div>
+
+        {{#each reactionApps provides="menu"}}
+          {{> Template.dynamic template=template}}
+        {{/each}}
+      </nav>
+    </div>
+
+<!--
+    <div class="row navbar-primary-tags">
+       <div class="navbar-tags">{{> headerTags}}</div>
+    </div>
+-->
+  </div>
+
+  <div class="collapse" id="exCollapsingNavbar">
+    <div class="p-a-1">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="./../ourmattress" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">Our Mattresses</a></li>
+        <li><a href="./../benefits" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">The Benefits</a></li>
+        <li><a href="./../yoursomnium" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">Your Somnium</a></li>
+        <li><a href="./../faqs" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">Faqs</a></li>
+        <li><a href="./../retailers" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">Retailers</a></li>
+        <li><a href="./../products" data-toggle="collapse" data-target=".collapse" style="font:'Lato',sans-serif !important;">Buy Now</a></li>
+        <li>{{> cartIcon}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<!--
+<div style="position:relative;height:50px;background-color:#fff;z-index:-1;"></div>
+-->
+
+<script>
+  $("a.somnium-brand-dropdown").click(function() {
+      if ($('.navbar-accounts').css('left') === '0px')
+          $('.navbar-accounts').css({ 'top': '-68px', 'display': 'block', 'opacity': '1', 'left': '45px' });
+      else
+          $('.navbar-accounts').css({ 'top': '-68px', 'display': 'none', 'opacity': '0', 'left': '0px' });
+  });
+</script>
+
 </template>

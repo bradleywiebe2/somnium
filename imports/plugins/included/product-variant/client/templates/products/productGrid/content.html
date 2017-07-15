@@ -2,8 +2,12 @@
   <div class="grid-content">
     <a href="{{pdpPath}}" data-event-category="grid" data-event-action="product-click" data-event-label="grid product click" data-event-value="{{_id}}">
       <div class="overlay">
-        <div class="overlay-title">{{title}}</div>
-        <div class="currency-symbol">{{formatPrice displayPrice}}</div>
+        <div class="capture1" style="padding: 21px 18px 32px;">
+          <h3 style="min-height:54px;word-break:keep-all;">{{title}}</h3>
+          <br>
+          <a href="{{pdpPath 'product' 'handle'}}" class="link">Purchase</a>
+          <!-- <div class="currency-symbol">{{formatPrice displayPrice}}</div> -->
+        </div>
       </div>
     </a>
   </div>
