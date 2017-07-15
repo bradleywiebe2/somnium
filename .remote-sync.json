@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "192.169.167.241",
+  "port": "22",
+  "target": "/home/wrenchcaptain/somnium",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "wrenchcaptain",
+  "password": "Fartfart44!",
+  "watch": [],
+  "transport": "scp"
+}

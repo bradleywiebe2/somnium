@@ -1,0 +1,113 @@
+[{
+  "_id": "BCTMZ6HTxFSppJESk",
+  "shopId": "J8Bhq3uTtdgwZx3rz",
+  "ancestors": [],
+  "createdAt": {
+    "$date": "2014-04-03T13:46:52.411-0700"
+  },
+  "description": "Everything we could change for the better about a mattress we did. Cleaner, lighter, healthier, better support, better for the environment, and more comfortable. We aren't just another spring mattress or a foam mattress; we are a mattress of innovations.",
+  "handle": "somnium-product",
+  "hashtags": [
+    "rpjCvTBGjhBi2xdro",
+    "cseCBSSrJ3t8HQSNP"
+  ],
+  "price.range": "3600",
+  "price.min": 3600,
+  "price.max": 3600,
+  "isVisible": true,
+  "isLowQuantity": false,
+  "isSoldOut": false,
+  "isBackorder": false,
+  "pageTitle": "Somnium Mattress.",
+  "type": "simple",
+  "title": "Standard Somnium Mattress",
+  "updatedAt": {
+    "$date": "2016-06-01T12:17:13.949-0700"
+  },
+  "vendor": "Somnium",
+  "parcel": {
+    "length": 84,
+    "width": 72,
+    "height": 1,
+    "weight": 35
+  }
+}, {
+  "_id": "6qiqPwBkeJdtdQc4G",
+  "ancestors": [
+    "BCTMZ6HTxFSppJESk"
+  ],
+  "title": "Mattress Sizes",
+  "price": 3600,
+  "inventoryManagement": true,
+  "inventoryPolicy": true,
+  "inventoryQuantity": 15,
+  "isVisible": true,
+  "updatedAt": {
+    "$date": "2014-04-03T13:46:52.411-0700"
+  },
+  "createdAt": {
+    "$date": "2014-04-03T13:46:52.411-0700"
+  },
+  "weight": 35,
+  "metafields": [{
+    "key": null,
+    "value": null
+  }],
+  "shopId": "J8Bhq3uTtdgwZx3rz",
+  "taxable": true,
+  "type": "variant"
+}, {
+  "_id": "SMr4rhDFnYvFMtDTX",
+  "ancestors": [
+    "BCTMZ6HTxFSppJESk",
+    "6qiqPwBkeJdtdQc4G"
+  ],
+  "title": "U.S. Size",
+  "optionTitle": "King",
+  "price": 3600,
+  "inventoryManagement": true,
+  "inventoryPolicy": true,
+  "inventoryQuantity": 19,
+  "isVisible": true,
+  "updatedAt": {
+    "$date": "2016-04-03T13:46:52.411-0700"
+  },
+  "createdAt": {
+    "$date": "2016-04-03T13:46:52.411-0700"
+  },
+  "weight": 35,
+  "metafields": [{
+    "key": null,
+    "value": null
+  }],
+  "shopId": "J8Bhq3uTtdgwZx3rz",
+  "taxable": true,
+  "type": "variant"
+}, {
+  "_id": "CJoRBm9vRrorc9mxZ",
+  "ancestors": [
+    "BCTMZ6HTxFSppJESk",
+    "6qiqPwBkeJdtdQc4G"
+  ],
+  "title": "Euro Size",
+  "optionTitle": "200 x 200",
+  "price": 3600,
+  "inventoryManagement": true,
+  "inventoryPolicy": true,
+  "inventoryQuantity": 42,
+  "isVisible": true,
+  "updatedAt": {
+    "$date": "2016-04-03T13:46:52.411-0700"
+  },
+  "createdAt": {
+    "$date": "2016-04-03T13:46:52.411-0700"
+  },
+  "weight": 35,
+  "metafields": [{
+    "key": null,
+    "value": null
+  }],
+  "shopId": "J8Bhq3uTtdgwZx3rz",
+  "taxable": true,
+  "type": "variant"
+}]
