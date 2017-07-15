@@ -106,11 +106,9 @@ h3 {
 	font-size: 21px;
 	line-height: 27px;
 	display: inline-block;
-	word-break: keep-all !important;
+
 }
-.capture1 > h3 {
-	min-height: 54px !important;
-}
+
 h4 {
 	font-size: 30px;
 	line-height: 30px;
@@ -808,15 +806,4 @@ h4 {
 .footer-default {
 	background: transparent !important;
 	background-color: transparent !important;
-}
-.rui.dropdown-menu {
-  display: block;
-  position: static;
-  float: none;
-}
-.reaction-toolbar > .rui {
-  padding-bottom: 15px !important;
-}
-.pdp {
-	background-color: #fff !important;
 }

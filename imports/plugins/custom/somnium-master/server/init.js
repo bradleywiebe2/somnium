@@ -53,35 +53,35 @@ function addRolesToVisitors() {
       defaultVisitorRole: "yoursomnium"
     }
   });
-  Shops.update(shop._id, {
-    $addToSet: {
-      defaultRole: "about",
-      defaultRole: "athletes",
-      defaultRole: "benefits",
-      defaultRole: "contactus",
-      defaultRole: "default",
-      defaultRole: "design",
-      defaultRole: "designers",
-      defaultRole: "faqs",
-      defaultRole: "financing",
-      defaultRole: "health",
-      defaultRole: "home",
-      defaultRole: "mattresscare",
-      defaultRole: "news",
-      defaultRole: "ourcompany",
-      defaultRole: "ourmattress",
-      defaultRole: "privacy",
-      defaultRole: "retailers",
-      defaultRole: "returnpolicy",
-      defaultRole: "somnium1",
-      defaultRole: "somnium2",
-      defaultRole: "somniumbaby",
-      defaultRole: "team",
-      defaultRole: "terms",
-      defaultRole: "warranty",
-      defaultRole: "yoursomnium"
-    }
-  });
+  // Shops.update(shop._id, {
+  //   $addToSet: {
+  //     defaultRole: "about",
+  //     defaultRole: "athletes",
+  //     defaultRole: "benefits",
+  //     defaultRole: "contactus",
+  //     defaultRole: "default",
+  //     defaultRole: "design",
+  //     defaultRole: "designers",
+  //     defaultRole: "faqs",
+  //     defaultRole: "financing",
+  //     defaultRole: "health",
+  //     defaultRole: "home",
+  //     defaultRole: "mattresscare",
+  //     defaultRole: "news",
+  //     defaultRole: "ourcompany",
+  //     defaultRole: "ourmattress",
+  //     defaultRole: "privacy",
+  //     defaultRole: "retailers",
+  //     defaultRole: "returnpolicy",
+  //     defaultRole: "somnium1",
+  //     defaultRole: "somnium2",
+  //     defaultRole: "somniumbaby",
+  //     defaultRole: "team",
+  //     defaultRole: "terms",
+  //     defaultRole: "warranty",
+  //     defaultRole: "yoursomnium"
+  //   }
+  // });
 }
 
 function changeLayouts(shopId, newLayout) {
