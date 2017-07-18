@@ -38,6 +38,7 @@ BrowserPolicy.content.allowOriginForAll("connect.facebook.net");
 BrowserPolicy.content.allowOriginForAll("*.googleusercontent.com");
 BrowserPolicy.content.allowOriginForAll("https://www.google.com/maps/d/u/1/embed?mid=1L3Lt_swR7AwN1o17n57IA0fmawM");
 BrowserPolicy.content.allowOriginForAll("maps.google.com");
+BrowserPolicy.content.allowOriginForAll("batchgeo.com");
 BrowserPolicy.content.allowOriginForAll("https://maps.googleapis.com");
 
 BrowserPolicy.content.allowImageOrigin("fbcdn-profile-a.akamaihd.net");
